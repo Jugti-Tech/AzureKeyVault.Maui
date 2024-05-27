@@ -25,7 +25,8 @@ namespace AzureKeyVault.Maui
 
         public async Task LoadKeyVaultSecret()
         {
-            string key1= "firstSecretKey";
+            // Replace with your key vault secret name
+            string key1 = "firstSecretKey";
             string key2 = "secondSecretKey";
             string key3 = "thirdSecretKey";
 
@@ -43,6 +44,7 @@ namespace AzureKeyVault.Maui
         {
             try
             {
+                // Replace with your key vault URI
                 var kvUri = "url of the key vault";
 
                 var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());

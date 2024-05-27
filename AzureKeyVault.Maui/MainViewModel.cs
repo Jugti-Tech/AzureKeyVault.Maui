@@ -58,7 +58,7 @@ namespace AzureKeyVault.Maui
                 await Shell.Current.DisplayAlert("Error",ex.Message,"Okay");
             }
 
-            return string.Empty;
+            return "dummy secret";
         }   
     }
 }

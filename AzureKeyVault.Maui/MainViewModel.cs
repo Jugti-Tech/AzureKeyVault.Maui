@@ -44,18 +44,12 @@ namespace AzureKeyVault.Maui
         {
             try
             {
-                // Replace with your key vault URI
-                var kvUri = "url of the key vault";
-
-                var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
-
-                KeyVaultSecret secret = client.GetSecret(key);
-                return secret.Value;
+               
             }
             catch (Exception ex)
             {
 
-                await Shell.Current.DisplayAlert("Error",ex.Message,"Okay");
+                
             }
 
             return "dummy secret";

@@ -18,10 +18,6 @@
                 Style="{StaticResource Headline}"
                  />
 
-            <Label
- Text="{Binding  Label2Text}"
-Style="{StaticResource Headline}"
- />
 
             <Label
       Text="{Binding  Label3Text}"

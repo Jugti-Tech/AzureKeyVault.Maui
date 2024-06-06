@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
-using System.Runtime.Intrinsics.X86;
 
 namespace AzureKeyVault.Maui
 {
@@ -28,8 +27,8 @@ namespace AzureKeyVault.Maui
         public MainViewModel(IConfiguration configuration)
         {
             this.configuration = configuration;
-            // Load the FunctionURL and SecretNames from the appsettings.json file. The appsettings.json file is embedded in the project and is ignored by Git. 
 
+            // Load the FunctionURL and SecretNames from the appsettings.json file. The appsettings.json file is embedded in the project and is ignored by Git. 
             FunctionUrl = configuration["url"];
             SecretNames = configuration["secretNames"];
             

@@ -20,7 +20,7 @@
 
 
             <Label
-      Text="{Binding  Label3Text}"
+      Text="{Binding  Label2Text}"
       Style="{StaticResource Headline}"
       />
         </VerticalStackLayout>

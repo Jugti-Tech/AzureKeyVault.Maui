@@ -25,8 +25,12 @@ namespace AzureKeyVault.Maui
 
             builder.Services.AddSingleton<MainPage, MainViewModel>();
 
-          
 
+            var a = Assembly.GetExecutingAssembly();
+            using var stream = a.GetManifestResourceStream("AzureKeyVault.Maui.appsettings.json");
+            IConfiguration? config = new ConfigurationBuilder().AddJsonStream(stream).Build();
+
+            builder.Configuration.AddConfiguration(config); 
 
 
 #if DEBUG
